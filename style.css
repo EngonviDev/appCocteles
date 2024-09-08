@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4B0082, #87CEEB); /* Degradado de morado oscuro a azul claro */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #6A5ACD; /* Borde azul oscuro */
+}
+
+h1, h2 {
+    color: #6A5ACD; /* Color azul oscuro para los encabezados */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6A5ACD; /* Borde azul oscuro */
+    border-radius: 5px;
+    background-color: #E6E6FA; /* Color lavanda para los campos de entrada */
+}
+
+input[type="number"] {
+    width: 50px; /* Ancho reducido para los campos de cantidad */
+    margin: 0 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6A5ACD; /* Color azul oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #836FFF; /* Color azul más claro al pasar el mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #E6E6FA; /* Color lavanda para los elementos de la lista */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #6A5ACD; /* Borde azul oscuro */
+    color: #4B0082; /* Color morado oscuro para el texto de la lista */
+}
+
+/* Estilo para el menú de bebidas */
+.drink-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.drink-item label {
+    flex: 1; /* Esto permite que la etiqueta ocupe el espacio disponible */
+}
+
+.quantity-btn {
+    background-color: #6A5ACD; /* Color azul oscuro */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px; /* Espacio entre el input y los botones */
+}
+
+.quantity-btn:hover {
+    background-color: #836FFF; /* Color azul más claro al pasar el mouse */
+}
+
+#invoice {
+    background: #ffffff; /* Color blanco para la factura */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #6A5ACD; /* Borde azul oscuro */
+}
+
+#timers {
+    margin-top: 10px; /* Espacio entre la lista de pedidos y los temporizadores */
+}

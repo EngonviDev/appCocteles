@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pedidos</h1>
+        <div id="menu">
+            <h2>Menú de Bebidas</h2>
+            <div class="drink-item">
+                <label for="drink1">Mojito - $5</label>
+                <input type="number" id="quantity1" min="0" value="0">
+                <button class="quantity-btn" data-action="decrease">-</button>
+                <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <div class="drink-item">
+                <label for="drink2">Piña Colada - $6</label>
+                <input type="number" id="quantity2" min="0" value="0">
+                <button class="quantity-btn" data-action="decrease">-</button>
+                <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+            <div class="drink-item">
+                <label for="drink3">Daiquiri - $4</label>
+                <input type="number" id="quantity3" min="0" value="0">
+                <button class="quantity-btn" data-action="decrease">-</button>
+                <button class="quantity-btn" data-action="increase">+</button>
+            </div>
+        </div>
+        <div id="register">
+            <h2>Regístrate como Cliente</h2>
+            <input type="text" id="clientName" placeholder="Nombre del Cliente" required>
+            <button id="registerButton">Registrar Pedido</button>
+        </div>
+        <div id="orders">
+            <h2>Pedidos Registrados</h2>
+            <ul id="orderList"></ul>
+            <div id="timers"></div>
+        </div>
+        <div id="invoice" style="display: none;">
+            <h2>Factura</h2>
+            <p>Cliente: <span id="invoiceClientName"></span></p>
+            <p>Bebidas:</p>
+            <ul id="invoiceDrinks"></ul>
+            <p>Total: <span id="invoiceTotal"></span></p>
+            <p id="invoiceTotalBeverages"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
